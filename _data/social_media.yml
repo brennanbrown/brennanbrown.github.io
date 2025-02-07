@@ -20,16 +20,16 @@
   icon: <i class="fab fa-keybase"></i>
 
 - name: LinkedIn
-  url: https://www.linkedin.com/in/bkennethbrown
+  url: https://www.linkedin.com/in/brennankbrown
   share_url_prefix: https://www.linkedin.com/shareArticle?mini=true&url=
   icon: <i class="fab fa-linkedin"></i>
 
 - name: WordPress
-  url: https://wandernotebook.com
+  url: https://bkpoetry.wordpress.com
   icon: <i class="fab fa-wordpress"></i>
 
 - name: Twitter
-  url: https://www.twitter.com/brennankbrown
+  url: https://www.twitter.com/bkennethbrown
   share_url_prefix: https://twitter.com/share?url=
   icon: <i class="fab fa-twitter-square"></i>
 
@@ -59,7 +59,7 @@
 #   icon: <i class="fab fa-facebook-square"></i>
 
 - name: Instagram
-  url: https://www.instagram.com/bkennethbrown
+  url: https://www.instagram.com/brennankennethbrown
   icon: <i class="fab fa-instagram-square"></i>
 
 - name: Mastodon
@@ -88,9 +88,25 @@
   url: https://www.meetup.com/members/231972720/
   icon: <i class="fab fa-meetup"></i>
 
+- name: ResearchGate
+  url: https://www.researchgate.net/profile/Brennan-Brown-2
+  icon: <i class="fab fa-researchgate"></i>
+
+- name: 750words
+  url: https://750words.com/person/brennan
+  icon: <i class="fab fa-pencil"></i>
+
+- name: Duolingo
+  url: https://www.duolingo.com/profile/brennankbrown
+  icon: <i class="fab fa-language"></i>
+
+- name: Beeminder
+  url: https://beeminder.com/brennanbrown
+  icon: <i class="fab fa-forumbee"></i>
+
 - name: Website
   url: https://brennanbrown.ca/
-  icon: <i class="fas fa-globe"></i>
+  icon: <i class="fab fa-globe"></i>
   
 # - name: YouTube
 #   url: https://www.youtube.com/
