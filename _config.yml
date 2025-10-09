@@ -6,6 +6,8 @@ port: 4040
 plugins:
   - jekyll-octicons
   - jekyll-github-metadata
+  - jekyll-seo-tag
+  - jekyll-sitemap
   - jemoji
 
 permalink: :title/
@@ -35,6 +37,15 @@ projects:
       - dotfiles
       - med11
       - med12
+      - stars
+      - offline
+      - kindreadthepoet
+      - site
+      - communityandromance
+      - plainjournal
+      - sakura
+      - eleventy-sandbox
+
 # topics:
 #   - name: CSS
 #     web_url: https://github.com/topics/css

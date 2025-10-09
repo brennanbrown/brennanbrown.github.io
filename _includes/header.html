@@ -29,6 +29,8 @@
     <meta property="og:description" content="{{ meta_description }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="{{ "/assets/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
     <script src="https://kit.fontawesome.com/e9dddf84a6.js" crossorigin="anonymous"></script>
+    {% seo %}
   </head>
   <body class="bg-white min-height-full" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
