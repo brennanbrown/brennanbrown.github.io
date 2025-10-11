@@ -1,5 +1,7 @@
-<h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My Projects</h2>
-<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">GitHub repositories that I've built.</p>
+<h2 {% if site.style == 'dark' %}class="text-white fade-in"{% else %}class="fade-in"{% endif %} style="font-size: 2.5rem; font-weight: 700; margin-bottom: 15px;">🚀 My Projects</h2>
+<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %} fade-in" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 600; font-size: 1.2rem; animation-delay: 0.1s;">
+    GitHub repositories that I've built with ❤️ and ☕
+</p>
 <div class="d-sm-flex flex-wrap gutter-condensed mb-4">
   {% if site.projects.sort_by == 'stars' %}
     {% assign sort_order = 'stargazers_count', 'last' %}
