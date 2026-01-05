@@ -189,24 +189,30 @@ span.emoji {
 // ================================
 // SOCIAL MEDIA ICONS GRID
 // ================================
-.d-flex.flex-wrap.flex-items-start.h1 {
+.flex-wrap.flex-items-start.h1 {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
-  gap: 12px;
+  gap: 12px !important;
   max-width: 400px;
   justify-items: center;
-  padding: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  
+  > div {
+    margin: 0 !important;
+  }
   
   a {
     display: flex !important;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 40px !important;
+    height: 40px !important;
     border-radius: 8px;
     background: rgba(102, 126, 234, 0.05);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    text-decoration: none !important;
     
     i {
       font-size: 18px;
@@ -217,6 +223,7 @@ span.emoji {
       transform: translateY(-3px) scale(1.05);
       background: rgba(102, 126, 234, 0.1);
       box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2);
+      text-decoration: none !important;
       
       i {
         filter: drop-shadow(0 2px 4px rgba(102, 126, 234, 0.4));
@@ -231,6 +238,11 @@ span.emoji {
     &:focus {
       outline: 2px solid #667eea;
       outline-offset: 2px;
+    }
+    
+    // Remove underline from social icons
+    &::after {
+      display: none !important;
     }
     
     // Tooltip on hover
@@ -259,7 +271,7 @@ span.emoji {
 }
 
 // Dark mode social icons
-body.dark-theme .d-flex.flex-wrap.flex-items-start.h1 a {
+body.dark-theme .flex-wrap.flex-items-start.h1 a {
   background: rgba(255, 255, 255, 0.05);
   
   &:hover {
@@ -453,11 +465,12 @@ footer a:hover::after {
 // ================================
 a {
   position: relative;
-  text-decoration: none;
+  text-decoration: underline;
   transition: all 0.2s ease;
-  padding-bottom: 1px;
+  text-decoration-color: rgba(102, 126, 234, 0.3);
+  text-underline-offset: 3px;
   
-  // Add underline animation
+  // Add gradient underline animation
   &::after {
     content: '';
     position: absolute;
@@ -472,7 +485,7 @@ a {
   
   &:hover {
     transform: translateY(-1px);
-    text-decoration: none !important;
+    text-decoration-color: rgba(102, 126, 234, 0.8);
     
     &::after {
       width: 100%;
@@ -500,6 +513,18 @@ a {
     &:focus {
       top: 6px;
     }
+  }
+}
+
+// Remove underline animations from specific elements
+.profile-img,
+h1, h2, h3, h4, h5, h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+a.text-dark {
+  text-decoration: none !important;
+  
+  &::after {
+    display: none !important;
   }
 }
 
