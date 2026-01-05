@@ -48,7 +48,7 @@ Here's a list of projects that are being hosted here via [GitHub Pages](https://
 
 ### Fork the repository
 
-You'll be making your own copy of the "personal website starter" repository so you have your own project to customize. A "fork" is a copy of a repository. So select "Fork" atop [the repository](https://github.com/github/personal-website).
+You'll be making your own copy of the "brennanbrown.github.io" repository so you have your own project to customize. A "fork" is a copy of a repository. So select "Fork" atop [the repository](https://github.com/brennanbrown/brennanbrown.github.io).
 
 Once you've found a home for your forked repository, it's yours. You're the owner, so you're ready to publish, if you wish.
 
@@ -72,7 +72,7 @@ gem install jekyll bundler
 3. Change into your new directory
 
 ```
-cd personal-website
+cd brennanbrown.github.io
 ```
 
 4. Install missing gems
@@ -90,14 +90,14 @@ bundle exec jekyll serve
 You should see something like:
 
 ```
-Configuration file: /octocat/personal-website/_config.yml
-            Source: /octocat/personal-website
-       Destination: /octocat/_site
+Configuration file: /brennanbrown/github.io/_config.yml
+            Source: /brennanbrown/github.io
+       Destination: /brennanbrown/_site
  Incremental build: disabled. Enable with --incremental
       Generating...
    GitHub Metadata: No GitHub API authentication could be found. Some fields may be missing or have incorrect data.
                     done in 14.729 seconds.
- Auto-regeneration: enabled for '/octocat/personal-website'
+ Auto-regeneration: enabled for '/brennanbrown/github.io'
     Server address: http://127.0.0.1:4000
   Server running... press ctrl-c to stop.
 ```

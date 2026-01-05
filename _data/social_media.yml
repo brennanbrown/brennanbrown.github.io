@@ -43,10 +43,10 @@
 # SOCIAL MEDIA
 # ================================
 
-- name: Twitter
+- name: X
   url: https://www.twitter.com/bkennethbrown
   share_url_prefix: https://twitter.com/share?url=
-  icon: <i class="fab fa-twitter-square"></i>
+  icon: <i class="fab fa-x-twitter"></i>
 
 - name: Bluesky
   url: https://bsky.app/profile/brennanbrown.bsky.social

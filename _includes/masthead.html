@@ -37,6 +37,11 @@
         {{ user.location }}
       </div>
     {% endif %}
+    <div class="{{ metadata_styles }}">
+      <button id="theme-toggle" class="btn btn-sm theme-toggle-btn" aria-label="Toggle dark mode">
+        <span id="theme-icon">{% if site.style == 'dark' %}☀️{% else %}🌙{% endif %}</span>
+      </button>
+    </div>
       <div class="d-flex flex-wrap flex-items-start h1 pb-4">
         {% for account in site.data.social_media %}
           <div class="mr-3"><a href="{{account.url}}" class="text-dark" title="{{account.name}}">{{account.icon}}</a></div>
