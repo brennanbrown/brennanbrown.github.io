@@ -5,6 +5,27 @@
 @import "highlight-syntax";
 
 // ================================
+// MOBILE VIEWPORT RESET
+// ================================
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+// ================================
 // COLOR PALETTE & VARIABLES
 // ================================
 :root {
@@ -19,9 +40,6 @@
 // ================================
 // SMOOTH SCROLLING & ANIMATIONS
 // ================================
-html {
-  scroll-behavior: smooth;
-}
 
 @keyframes fadeInUp {
   from {
@@ -240,7 +258,9 @@ span.emoji {
       outline-offset: 2px;
     }
     
-    // Remove underline from social icons
+    // Social icons don't need underlines
+    text-decoration: none !important;
+    
     &::after {
       display: none !important;
     }
@@ -465,9 +485,9 @@ footer a:hover::after {
 // ================================
 a {
   position: relative;
-  text-decoration: underline;
+  text-decoration: underline !important;
   transition: all 0.2s ease;
-  text-decoration-color: rgba(102, 126, 234, 0.3);
+  text-decoration-color: rgba(102, 126, 234, 0.3) !important;
   text-underline-offset: 3px;
   
   // Add gradient underline animation
@@ -485,7 +505,7 @@ a {
   
   &:hover {
     transform: translateY(-1px);
-    text-decoration-color: rgba(102, 126, 234, 0.8);
+    text-decoration-color: rgba(102, 126, 234, 0.8) !important;
     
     &::after {
       width: 100%;
@@ -506,7 +526,7 @@ a {
     background: #667eea;
     color: white;
     padding: 8px;
-    text-decoration: none;
+    text-decoration: none !important;
     border-radius: 4px;
     z-index: 1000;
     
@@ -516,11 +536,8 @@ a {
   }
 }
 
-// Remove underline animations from specific elements
-.profile-img,
-h1, h2, h3, h4, h5, h6,
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
-a.text-dark {
+// Only remove underline from profile images
+.profile-img {
   text-decoration: none !important;
   
   &::after {
@@ -532,11 +549,14 @@ a.text-dark {
 .text-dark {
   position: relative;
   transition: all 0.2s ease;
+  text-decoration: underline !important;
+  text-decoration-color: rgba(102, 126, 234, 0.3) !important;
+  text-underline-offset: 3px;
   
   &::after {
     content: '';
     position: absolute;
-    bottom: -2px;
+    bottom: 0;
     left: 0;
     width: 0;
     height: 2px;
@@ -547,6 +567,7 @@ a.text-dark {
   
   &:hover {
     transform: translateY(-2px);
+    text-decoration-color: rgba(102, 126, 234, 0.8) !important;
     
     &::after {
       width: 100%;
@@ -594,7 +615,76 @@ select:focus {
   box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
 }
 
-// Reduce motion for users who prefer it
+// ================================
+// MOBILE RESPONSIVE FIXES
+// ================================
+@media (max-width: 767px) {
+  // Fix mobile viewport issues
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  // Stack sidebar and content on mobile
+  .d-md-flex {
+    flex-direction: column !important;
+  }
+  
+  // Remove unnecessary borders on mobile
+  .border-md-right,
+  .border-md-bottom {
+    border: none !important;
+  }
+  
+  // Fix sidebar spacing on mobile
+  .col-md-5,
+  .col-lg-4,
+  .col-xl-3 {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-right: none !important;
+    border-bottom: 1px solid #e1e4e8 !important;
+  }
+  
+  // Fix content area on mobile
+  .col-md-7,
+  .col-lg-8,
+  .col-xl-9 {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-top: none !important;
+  }
+  
+  // Remove horizontal padding on mobile
+  .px-4 {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  
+  // Fix social icons grid on mobile
+  .flex-wrap.flex-items-start.h1 {
+    max-width: 300px;
+    margin: 0 auto !important;
+  }
+  
+  // Ensure content doesn't overflow
+  .container-lg,
+  .container-md {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  
+  // Dark mode mobile fixes
+  body.dark-theme .col-md-5,
+  body.dark-theme .col-lg-4,
+  body.dark-theme .col-xl-3 {
+    border-bottom-color: #30363d !important;
+  }
+}
+
+// ================================
+// REDUCE MOTION
+// ================================
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -690,6 +780,8 @@ body.dark-theme {
   // Links
   a:not(.text-dark) {
     color: #58a6ff !important;
+    text-decoration: underline !important;
+    text-decoration-color: rgba(88, 166, 255, 0.5) !important;
   }
   
   // Borders
