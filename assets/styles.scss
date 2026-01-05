@@ -397,6 +397,168 @@ footer a:hover::after {
   border-color: #667eea !important;
 }
 
+// ================================
+// DARK MODE STYLES
+// ================================
+body.dark-theme {
+  background-color: #0d1117 !important;
+  color: #f0f6fc !important;
+  
+  // Main containers
+  .min-height-full,
+  .container-lg,
+  .container-md {
+    background-color: #0d1117 !important;
+  }
+  
+  // Sidebar
+  .col-md-5,
+  .col-lg-4,
+  .col-xl-3 {
+    background-color: #161b22 !important;
+    border-color: #30363d !important;
+    color: #f0f6fc !important;
+  }
+  
+  // Content area
+  .col-md-7,
+  .col-lg-8,
+  .col-xl-9 {
+    background-color: #0d1117 !important;
+    color: #f0f6fc !important;
+  }
+  
+  // Background colors
+  .bg-white {
+    background-color: #161b22 !important;
+    color: #f0f6fc !important;
+  }
+  
+  .bg-gray-light {
+    background-color: #161b22 !important;
+  }
+  
+  // Text colors
+  .text-gray {
+    color: #8b949e !important;
+  }
+  
+  .text-dark {
+    color: #f0f6fc !important;
+  }
+  
+  .text-dark:hover {
+    color: #58a6ff !important;
+  }
+  
+  // Links
+  a:not(.text-dark) {
+    color: #58a6ff !important;
+  }
+  
+  // Borders
+  .border,
+  .border-top,
+  .border-bottom,
+  .border-md-right,
+  .border-md-bottom {
+    border-color: #30363d !important;
+  }
+  
+  // Cards and containers
+  .border,
+  .box-shadow,
+  .rounded-1,
+  .rounded-2 {
+    background-color: #161b22 !important;
+    border-color: #30363d !important;
+    color: #f0f6fc !important;
+  }
+  
+  // Form elements
+  input,
+  textarea,
+  select {
+    background-color: #0d1117 !important;
+    border-color: #30363d !important;
+    color: #f0f6fc !important;
+  }
+  
+  // Buttons
+  .btn:not(.theme-toggle-btn):not(.btn-primary) {
+    background-color: #21262d !important;
+    border-color: #30363d !important;
+    color: #f0f6fc !important;
+  }
+  
+  // Code blocks
+  code,
+  pre {
+    background-color: #161b22 !important;
+    color: #f0f6fc !important;
+  }
+  
+  // Tables
+  table,
+  tr,
+  td,
+  th {
+    background-color: #161b22 !important;
+    border-color: #30363d !important;
+    color: #f0f6fc !important;
+  }
+  
+  // Blockquotes
+  blockquote {
+    color: #8b949e !important;
+    border-left-color: #30363d !important;
+  }
+  
+  // Footer
+  footer {
+    background-color: #161b22 !important;
+    color: #8b949e !important;
+    
+    a {
+      color: #58a6ff !important;
+    }
+  }
+  
+  // Headers
+  h1, h2, h3, h4, h5, h6 {
+    color: #f0f6fc !important;
+  }
+  
+  // Paragraphs and spans
+  p, span, div, li, td, th, label {
+    color: #f0f6fc !important;
+  }
+  
+  // Repository cards
+  .repo-list-item,
+  .public {
+    background-color: #161b22 !important;
+    border-color: #30363d !important;
+  }
+  
+  // Hover states
+  .border:hover,
+  .box-shadow:hover {
+    box-shadow: 0 12px 40px rgba(88, 166, 255, 0.2) !important;
+    border-color: rgba(88, 166, 255, 0.3) !important;
+  }
+  
+  // Octicons
+  .octicon {
+    fill: #f0f6fc !important;
+  }
+  
+  // Social media icons
+  .text-dark:hover {
+    color: #58a6ff !important;
+  }
+}
+
 body.dark-theme .theme-toggle-btn {
   border-color: #586069 !important;
   color: #f0f6fc !important;
