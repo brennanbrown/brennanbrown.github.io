@@ -1,4 +1,36 @@
 # ================================
+# omg.lol
+# ================================
+
+- name: omg.lol
+  url: https://brennan.omg.lol
+  icon: <i class="fas fa-laptop"></i>
+
+- name: omg.lol email
+  url: mailto:brennan@omg.lol
+  icon: <i class="fas fa-envelope"></i>
+
+- name: weblog.lol
+  url: https://brennan.day
+  icon: <i class="fas fa-laptop"></i>
+
+- name: some.pics
+  url: https://brennan.some.pics/
+  icon: <i class="fas fa-image"></i>
+
+- name: social.lol
+  url: https://brennan.social.lol
+  icon: <i class="fab fa-mastodon"></i>
+
+- name: source.tube
+  url: https://source.tube/brennan
+  icon: <i class="fas fa-git"></i>
+
+- name: paste.lol
+  url: https://brennan.paste.lol
+  icon: <i class="fas fa-paste"></i>
+
+# ================================
 # PROFESSIONAL & DEVELOPMENT
 # ================================
 
@@ -44,25 +76,29 @@
 # ================================
 
 - name: X
-  url: https://www.twitter.com/bkennethbrown
+  url: https://www.twitter.com/brennankbrown
   share_url_prefix: https://twitter.com/share?url=
-  icon: <i class="fab fa-x-twitter"></i>
+  icon: <i class="fab fa-twitter-square"></i>
 
 - name: Bluesky
-  url: https://bsky.app/profile/brennanbrown.bsky.social
+  url: https://bsky.app/profile/brennanbrown.ca
   icon: <i class="fas fa-cloud"></i>
 
-- name: Mastodon
-  url: https://fosstodon.org/web/accounts/330220
+- name: Mastodon (mastodon.social)
+  url: https://mastodon.social/@brennanbrown
+  icon: <i class="fab fa-mastodon"></i>
+
+- name: Mastodon (me.dm) 
+  url: https://me.dm/@brennanbrown
   icon: <i class="fab fa-mastodon"></i>
 
 - name: Facebook
-  url: https://www.facebook.com/brennankennethbrown
+  url: https://www.facebook.com/brennankbrown
   share_url_prefix: https://www.facebook.com/sharer/sharer.php?u=
   icon: <i class="fab fa-facebook-square"></i>
 
 - name: Instagram
-  url: https://www.instagram.com/brennankennethbrown
+  url: https://www.instagram.com/brennankbrown
   icon: <i class="fab fa-instagram-square"></i>
 
 - name: Reddit
