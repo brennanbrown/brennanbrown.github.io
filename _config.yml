@@ -1,6 +1,9 @@
 layout: sidebar
 style: light
 
+url: "https://brennanbrown.github.io"
+baseurl: ""
+
 port: 4040
 
 plugins:
